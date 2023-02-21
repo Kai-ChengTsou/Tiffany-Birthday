@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiffany Birthday</title>
+    <link rel="stylesheet" href="styles/loginStyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  
+    <section>
+      
+      <div class="box">
+          
+        <div class="square" style="--i:0;"></div>
+        <div class="square" style="--i:1;"></div>
+        <div class="square" style="--i:2;"></div>
+        <div class="square" style="--i:3;"></div>
+        <div class="square" style="--i:4;"></div>
+        <div class="square" style="--i:5;"></div>
+          
+        <div class="container"> 
+          <div class="form"> 
+            <h2>Tiffany's Birthday</h2>
+            <form action="">
+              <div class="inputBx">
+                <input type="text" placeholder="Tommy" required="required" id="login-name">
+                <span>Your Name</span>
+                <i class="fas fa-solid fa-signature"></i>
+              </div>
+              <div class="inputBx password">
+                <input id="password-input" type="password" placeholder="00/00" name="password" required="required">
+                <span>Password</span>
+                <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+                <i class="fas fa-regular fa-heart"></i>
+              </div>
+              
+              <!-- <div class="inputBx">
+                <input type="submit" value="Log in" disabled> 
+              </div> -->
+              
+            </form>
+            <button class="btn-hover" id="log-in">Log in</button>
+            <p id="hint">Hint:  <a href="#">Click Here</a></p>
+            <div id="hint-box">
+              <p>Anniversary</p>
+            </div>
+            
+          </div>
+        </div>
+          
+      </div>
+      <div id="access">
+        hello
+      </div>
+      <div id="error-box">
+        <div class="face2">
+          <div class="eye"></div>
+          <div class="eye right"></div>
+          <div class="mouth sad"></div>
+        </div>
+        <div class="shadow move"></div>
+        <div class="message"><h1 class="alert" id="error">Error!</h1><p id="error-message">OGG Everything is incorrect </div>
+        <button id="try-again" class="button-box">TRY AGAIN</button>
+      </div>
+    </div>
+    </section>
+      
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+<script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+<script src="js/loginScript.js"></script>
+</html>
