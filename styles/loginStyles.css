@@ -477,6 +477,11 @@ button, .dot {
   }
 }
 
+@media (width <= 500px) {
+  html {
+    overflow-x: hidden; }
+}
+
 /* footer {
   position: absolute;
   bottom: 0;
