@@ -58,7 +58,7 @@ logIn.addEventListener('click', function(){
 		else{
 			errorBox.style.display = "block";
 			error.innerText = "Correct! but...";
-			errorMessage.innerText = "Sorry " + loginName.value + " " + countdown + " days till your birthday!";
+			errorMessage.innerText = "Sorry " + loginName.value + " " + countdown + " days until your birthday!";
 			gsap.fromTo(errorBox, {opacity: 0}, {opacity: 1, duration:1});
 		}
 		
