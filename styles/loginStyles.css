@@ -286,6 +286,7 @@ input::placeholder {
   margin-top: 30px;
   margin-left: 75px;
   margin-bottom: 20px;
+  position:relative;
 }
 
 #hint-box{
@@ -296,9 +297,8 @@ input::placeholder {
   height: 30px;
   border-radius: 10px;
   display: none;
-  position: fixed;
-  top: 1020px;
-  left:105px;
+  margin-left: 75px;
+
 }
 
 .red {

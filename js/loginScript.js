@@ -88,7 +88,7 @@ logIn.addEventListener('click', function(){
 hint.addEventListener('click', () =>{
 	hintBox.style.display = 'block';
 	gsap.fromTo(hintBox, {opacity: 0}, {opacity: 1, duration:1});
-	gsap.to(hintBox, {y: -600, duration: 1});
+	gsap.to(hintBox, {y: 0, duration: 1});
 	
 });
 
