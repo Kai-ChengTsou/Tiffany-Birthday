@@ -477,9 +477,10 @@ button, .dot {
   }
 }
 
-@media (width <= 500px) {
-  html {
-    overflow-x: hidden; }
+@media (max-width:500px) {
+  body, html {
+    overflow-x: hidden;
+  overflow-y: hidden; }
 }
 
 /* footer {
