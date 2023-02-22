@@ -327,7 +327,7 @@ button, .dot {
   position: fixed;
   width: 300px;
   height: 300px;
-  top: 290px;
+  bottom: 350px;
   background: linear-gradient(to bottom left, #ef8d9c 40%, #ffc391 100%);
   border-radius: 20px;
   box-shadow: 5px 5px 20px rgba(#cbcdd3,10%);
@@ -483,7 +483,7 @@ button, .dot {
   }
 
   #error-box {
-    top: 250px;
+    bottom: 350px;
   }
 }
 
