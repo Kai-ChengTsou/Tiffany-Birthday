@@ -479,9 +479,15 @@ button, .dot {
 
 @media (max-width:500px) {
   body, html {
-    overflow-x: hidden; }
+    overflow-x: hidden; 
+  }
+
+  #error-box {
+    top: 250px;
+  }
 }
 
+ 
 /* footer {
   position: absolute;
   bottom: 0;
