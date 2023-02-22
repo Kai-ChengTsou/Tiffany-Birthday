@@ -480,10 +480,11 @@ button, .dot {
 @media (max-width:500px) {
   body, html {
     overflow-x: hidden; 
+    overflow-y: auto;
   }
 
   #error-box {
-    bottom: 300px;
+    bottom: 100px;
   }
 }
 
