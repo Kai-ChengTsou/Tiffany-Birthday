@@ -24,18 +24,10 @@ const errorBox = document.getElementById('error-box');
 const tryAgain = document.getElementById('try-again');
 const error = document.getElementById('error');
 const errorMessage = document.getElementById('error-message');
-const dateFull = new Date();
-const date  = dateFull.getDate();
-const month  = dateFull.getMonth() + 1;
-const year = dateFull.getFullYear();
-let countdown = 0;
-
-if(month == 2){
-	countdown = 45 - date;
-}
-else if(month == 3){
-	countdown = 17 - date;
-}
+const currentTime = new Date();
+const birthday = new Date("3/17/2023")
+let timeDif = birthday - currentTime;
+let dayDif = Math.floor(timeDif / 86400000) % 365 + 1;
 
 logIn.addEventListener('click', function(){
 
@@ -44,21 +36,13 @@ logIn.addEventListener('click', function(){
 
 	if(checkName === "TIFFANY" && (password.value === "12/06" || password.value === "1206")){
 		
-		if(year > 2023){
-			access.style.display = 'block';
-			window.open('choice.html', '_self');
-		// gsap.to('#access', {y: 300, duration: 2});
-		// gsap.fromTo('#access', {scale: 1}, {scale: 2, duration:1});
-		// gsap.fromTo('#access', {opacity: 0}, {opacity: 1, duration:2});
-		}
-		if(year == 2023 && month >= 3 && date >= 17){
-			access.style.display = 'block';
+		if(dayDif <= 0){
 			window.open('choice.html', '_self');
 		}
 		else{
 			errorBox.style.display = "block";
 			error.innerText = "Correct! but...";
-			errorMessage.innerText = "Sorry " + loginName.value + " " + countdown + " days until your birthday!";
+			errorMessage.innerText = "Sorry " + loginName.value + " " + dayDif + " days until your birthday!";
 			gsap.fromTo(errorBox, {opacity: 0}, {opacity: 1, duration:1});
 		}
 		
