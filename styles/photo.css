@@ -4,10 +4,13 @@
   }
   
   html,
-  body {
+  body{
     height: 100%;
     /* for touch screen */
     touch-action: none; 
+    background: #111;
+    overflow: hidden;
+    position: relative;
   }
   
   body {
@@ -16,11 +19,69 @@
     display: -ms-flexbox;
     display: flex;
     background: #111;
+    
     -webkit-perspective: 1000px;
             perspective: 1000px;
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
+    
   }
+
+  
+  .pulse:hover,
+.pulse:focus {
+  -webkit-animation: pulse 1s;
+          animation: pulse 1s;
+  box-shadow: 0 0 0 2em transparent;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+.pulse {
+  --color: #ef6eae;
+  --hover: #ef8f6e;
+}
+button {
+  color: var(--color);
+  transition: 0.25s;
+}
+button:hover, button:focus {
+  border-color: var(--hover);
+  color: #fff;
+}
+button {
+  cursor: pointer;
+  position: absolute;
+  bottom: -350px;
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
+  /* .remove {
+    animation: remove 5s 1s ease-in-out forwards;
+  }
+  
+  @keyframes remove {
+    from {
+      transform: translateX(0) scale(1);
+    }
+    to {
+      transform: translateX(100vw) scale(0);
+    }
+  } */
+  
   
   #drag-container, #spin-container {
     position: relative;
@@ -50,13 +111,13 @@
     -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
   }
   
-  #drag-container img:hover, #drag-container video:hover {
+  #drag-container img:hover, #drag-container video:hover{
     -webkit-box-shadow: 0 0 15px #fffd;
             box-shadow: 0 0 15px #fffd;
     -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0007);
   }
   
-  #drag-container p {
+  #drag-container p{
     font-family: Serif;
     position: absolute;
     top: 100%;
@@ -66,7 +127,7 @@
     color: #fff;
   }
   
-  #ground {
+  #ground{
     width: 900px;
     height: 900px;
     position: absolute;

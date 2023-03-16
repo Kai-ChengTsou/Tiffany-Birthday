@@ -165,6 +165,7 @@
   body, main {
     display: grid;
     place-items: center;
+    transition: all 1s ease-in-out;
   }
   
   body, html {

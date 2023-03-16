@@ -28,7 +28,7 @@ h4 {
 
 
 .card {
-	color: #dba009; /*SHERPA BLUE*/
+	color: #c75eed; /*SHERPA BLUE*/
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -130,3 +130,92 @@ h4 {
 .text-right {
 	text-align: right;
 }
+
+#tiffany1{
+	height: 400px;
+	position: absolute;
+	top: 30px;
+	right: 200px;
+	animation: rotate 3s ease-in-out infinite;
+}
+#tiffany2{
+	height: 400px;
+	position: absolute;
+	top: 30px;
+	left: 200px;
+	animation: rotate2 3s ease-in-out infinite;
+}
+#tiffany3{
+	height: 400px;
+	position: absolute;
+	bottom: 30px;
+	right: 200px;
+	animation: rotate2 3s ease-in-out infinite;
+}
+#tiffany4{
+	height: 400px;
+	position: absolute;
+	bottom: 30px;
+	left: 100px;
+	animation: rotate 3s ease-in-out infinite;
+}
+
+@keyframes bounce{
+	0%{
+		transform: translateX(0px);
+	}
+	50%{
+		transform: translateX(30px);
+	}
+	100%{
+		transform: translateX(0px);
+	}
+}
+@keyframes rotate{
+	0%{
+		transform: rotate(-2deg);
+	}
+	50%{
+		transform: rotate(2deg);
+	}
+	100%{
+		transform: rotate(-2deg);
+	}
+}
+@keyframes rotate2{
+	0%{
+		transform: rotate(2deg);
+	}
+	50%{
+		transform: rotate(-2deg);
+	}
+	100%{
+		transform: rotate(2deg);
+	}
+}
+
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+
+button {
+	background: none;
+	border: 2px solid;
+	font: inherit;
+	line-height: 1;
+	margin: 0.5em;
+	padding: 1em 2em;
+	color: #d39333;
+	transition: 0.25s;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 85vh;
+	display: block;
+  }
+
+  button:hover, button:focus {
+	border-color: #d562f2;
+	color: #d562f2;
+  }

@@ -45,7 +45,7 @@ function birthdayCard () {
 }
 
 function photos () {
-    window.open('photos.html', '_self');
+    window.open('photoMenu.html', '_self');
 }
 
 

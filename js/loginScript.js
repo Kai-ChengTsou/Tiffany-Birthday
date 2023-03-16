@@ -28,6 +28,8 @@ const currentTime = new Date();
 const birthday = new Date("3/17/2023")
 let timeDif = birthday - currentTime;
 let dayDif = Math.floor(timeDif / 86400000) % 365 + 1;
+const hours = Math.floor(timeDif / 3600000);
+const minutes = Math.floor((timeDif % 3600000) / 60000);
 
 logIn.addEventListener('click', function(){
 
@@ -42,7 +44,7 @@ logIn.addEventListener('click', function(){
 		else{
 			errorBox.style.display = "block";
 			error.innerText = "Correct! but...";
-			errorMessage.innerText = "Sorry " + loginName.value + " " + dayDif + " days until your birthday!";
+			errorMessage.innerHTML = "Sorry " + loginName.value + " " + hours + " hours and <br>" + minutes + " mins until your birthday!";
 			gsap.fromTo(errorBox, {opacity: 0}, {opacity: 1, duration:1});
 		}
 		
