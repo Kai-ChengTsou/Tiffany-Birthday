@@ -143,6 +143,7 @@ body {
     padding: 1em 2em;
     margin: 100px auto;
     display: block;
+    cursor: pointer;
   }
   .raise {
     --color: #1de4eb;

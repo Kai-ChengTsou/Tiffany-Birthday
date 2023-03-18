@@ -213,6 +213,7 @@ button {
 	margin-right: auto;
 	margin-top: 85vh;
 	display: block;
+	cursor: pointer;
   }
 
   button:hover, button:focus {
